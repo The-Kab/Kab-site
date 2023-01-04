@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+header{
+  background-color: #251749;
+  width: 100%;
+  /* to keep the header up */
+  position: fixed;
+  /* to avoid hiding the header with something z-index */
+  z-index: 999;
+  display: flex;
+  /* to leave a space between the elements in nav bar */
+  justify-content: space-between;
+  align-items: center;
+  /* padding short hand 10px (top & bottom) 200px(right & left) */
+  padding: 10px 200px;
+
+}
+/* cause we have a class for the logo we only write (.logo) */
+.logo{
+  /* to remove the line under the logo we use this */
+  text-decoration: none;
+  color: #FFFBEB;
+  /* to make the word's letter in capitales we use  */
+  text-transform: uppercase;
+  /* to make it bold using numbers */
+  font-weight: 700; 
+  font-size: 1.8em;
+}
+
+.navigation a{
+ color: #FFFBEB;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight:500;
+ font-size: 1.1em;
+ padding-left: 30px;
+}
+.navigation a:hover{
+  color: #601cfc;
+}
+
+section{
+  padding: 100px 200px ;
+}
+
+.main{
+  width: 100%;
+  /* vh is the veiw port what i see when i open the website 100vh for the main becouse when the main-btn can take more the main will rise as long the children main keep rise */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #FFFBEB;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #251749;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span{
+  display: inline-block;
+  margin-top: 10px;
+  color: #251749;
+  font-size: 3em;
+  font-weight: 600;
+}
+.main h3{
+  color: #251749;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn{
+  color: #FFFBEB;
+  background-color: #601cfc;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  /* we chose the numbers below to make it cool when you zoom in the page  */
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover{
+  background-color: #652bec;
+  transform: scale(1.1);
+}
+.social-icons a{
+  color: #601cfc;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+.photo{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.cards{
+  background-color: black;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  color: #652bec;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+  background-color: #FFFBEB;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 /50%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.icon{
+  color: #601cfc;
+  font-size: 8em;
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+.info h3{
+  color: #601cfc;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+.info p{
+  color: #000000;
+}
+.project .content{
+  margin-top: 30px;
+}
+.p-card{
+background-color: #000000;
+border-radius: 10px;
+box-shadow: 0 5px 25px rgb(1 1 1 /50%);
+min-height: 14em;
+width: 23em;
+overflow: hidden;
+transition: 0.7s ease;
+}
+.p-card:hover{
+  transform: scale(1.1);
+}
+.p-card:hover .p-image{
+  opacity: 0.8;
+}
+.p-image img{
+  width: 100%;
+  height: auto;
+}
+.p-info{
+  color: #FFFBEB;
+  padding: 1em;
+  text-align: center;
+}
+.p-info h3{
+  color: #652bec;
+  font-size: 1.5em;
+}
+.contact .icon{ 
+  font-size: 4.5em;
+}
+.contact .info h3{
+  color: #000000;
+}
+.contact .info p{
+  font-size: 1.2em;
+}
+.footer{
+  padding: 1em;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.3em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-title{
+  
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span{
+  color: #652bec;
+}
+.footer .social-icons a{
+  color: #000000;
+  font-size: 1.3em;
+}
